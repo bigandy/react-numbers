@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useState, useEffect, useInsertionEffect } from "react";
+import { createContext, useInsertionEffect, useState } from "react";
 
 interface Context {
   theme: Theme;

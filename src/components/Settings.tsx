@@ -1,4 +1,4 @@
-import { useSettings } from "../hooks/useSettings";
+import { useSettings } from "@hooks/useSettings";
 
 import Popover from "./Popover";
 
@@ -8,12 +8,8 @@ const ThemeSwitcher = () => {
     updateSetting,
   } = useSettings();
 
-  // const [open, setOpen] = useState(false);
-
-  const handleRateChange = (e) => {
-    console.log(e.target.value);
-
-    updateSetting(e.target.value, ["rate"]);
+  const handleRateChange = (e: React.FormEvent<HTMLInputElement>) => {
+    updateSetting(e.currentTarget.value, ["rate"]);
   };
 
   return (

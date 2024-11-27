@@ -1,11 +1,11 @@
 import { version } from "react";
-import SettingsProvider from "./contexts/SettingsContext";
-import ThemeProvider from "./contexts/ThemeContext";
+import SettingsProvider from "@contexts/SettingsContext";
+import ThemeProvider from "@contexts/ThemeContext";
 
-import ThemeSwitcher from "./components/ThemeSwitcher";
-import CurrentTheme from "./components/CurrentTheme";
-import Settings from "./components/Settings";
-import Voices from "./components/Voices";
+import ThemeSwitcher from "@components/ThemeSwitcher";
+import CurrentTheme from "@components/CurrentTheme";
+import Settings from "@components/Settings";
+import Voices from "@components/Voices";
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
   return (

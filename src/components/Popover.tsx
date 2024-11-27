@@ -1,4 +1,4 @@
-import { Fragment, useId, useState } from "react";
+import { Fragment, useId } from "react";
 
 interface Props {
   children: React.ReactNode;
@@ -7,7 +7,6 @@ interface Props {
 
 const Popover = ({ children, buttonText }: Props) => {
   const id = useId();
-  //   const [open, setOpen] = useState(false);
 
   return (
     <Fragment>
